@@ -1,0 +1,66 @@
+<div class="split left">
+
+    <div class="centered">
+        <div>
+            <!-- <label for="name"><b>Name</b></label>
+        <input type="text" [(ngModel)]="name" placeholder="Enter Your Name" name="name" required> -->
+
+
+            <div class="form-group">
+                <label for="instructorsids">InstructorName</label>
+                <input type="text" [(ngModel)]="instructorsids" name="instructorsids" required>
+            </div>
+
+            <div class="form-group">
+                <label for="courseName">CourseName</label>
+                <input type="text" [(ngModel)]="name" name="courseName">
+            </div>
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" [(ngModel)]="year" name="year">
+            </div>
+
+            <div class="form-group">
+                <label for="discription">Discription</label>
+                <input type="text" [(ngModel)]="des" name="discription">
+            </div>
+
+            <div>
+                <button (click)="addcoursee()" class="btn-floating waves-effect waves-light green"><i class="material-icons">add</i></button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- <div class="split right">
+    <div class="centered">
+        <table class="table table-bordered table-hover">
+            <thead>
+
+                <th>InstructorName</th>
+                <th>CourseName</th>
+                <th>Discription</th>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let a of s">
+
+
+                    <a routerLink="/Dashbord/Courses/Courseinfo">
+                        <td> {{this.a.instructorName}}</td>
+
+                        <td> {{this.a.courseName}}</td>
+                        <td> {{this.a.discription}}</td>
+                    </a>
+                    <div>
+                        <button (click)="onComplete(this.a.id)" class="btn-floating waves-effect waves-light blue"><i class="material-icons">check</i></button>
+                        <button (click)="onDelete(this.a.id)" class="btn-floating waves-effect waves-light red"><i class="material-icons">delete</i></button>
+                    </div>
+
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div> -->

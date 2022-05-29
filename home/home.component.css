@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.text-wrapper {
+    position: relative;
+    margin-top: -80%;
+}
+
+.text-wrapper h1 {
+    text-align: center;
+    color: darkorange;
+    font-size: 7vw;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-size: contain;
+}
