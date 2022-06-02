@@ -12,8 +12,8 @@ export class InstructorCoursesComponent  {
   constructor() { }
   todos :Todo[]=[
     new Todo(Guid.create(),'Dr/Mahmoud Mounir','opp',2),
-    new Todo(Guid.create(),'Dr/Ahmed Osha','zpy feek',4),
-    new Todo(Guid.create(),'Dr/JA','2hwa Breha ZB Eltafl ',3),
+    new Todo(Guid.create(),'Dr/Ahmed ',' system',4),
+    new Todo(Guid.create(),'Dr/JA','algo ',3),
       ]
 
 

@@ -125,7 +125,9 @@
 .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
 }
-
-.container {
-    background-color: #5a5660;
+.chat{
+position: relative;
+left:1350px;
+top:650px;
+    background-color: rgb(208, 237, 247);
 }
