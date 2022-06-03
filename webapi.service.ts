@@ -7,10 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class WebapiService {
 readonly APIUrl="https://localhost:7263/api";
+readonly APIUrl2="https://localhost:44395/api";
   constructor(private http:HttpClient) { }
 
   addacc(val:any){
-return this.http.post(this.APIUrl+'/Signings',val)
+return this.http.post(this.APIUrl+'/Signings/PostSigning',val)
 
   }
   getacc():Observable<any[]>{
@@ -22,6 +23,10 @@ return this.http.post(this.APIUrl+'/Signings',val)
   getcourse():Observable<any[]>{
     return this.http.get<any>(this.APIUrl + '/Courses1');
   }
+  upload(val: FormData){
+    return this.http.post(this.APIUrl+'/Weeks/Postmaterial',val)
+  }
+  
 
 }
 
