@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+.all {
+    background-color: #999;
+}
+
 body {
     background-color: #ebebeb;
     font-family: 'Fira Sans', sans-serif;
@@ -76,3 +80,96 @@ a:hover {
     background-color: #d6d6d6;
     cursor: pointer;
 }
+
+
+/* krjgidgjdgti */
+
+.container {
+    width: 100%;
+    margin-left: 15%;
+    padding: 15px;
+    margin-top: 5%;
+
+}
+
+
+/* Courses */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+:root {
+    --pink: #FF046F;
+    --violet: #C63BFA;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.heading {
+    font-size: 4rem;
+    color: pink;
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 6rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.course .box-container {
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.course .box-container .box {
+    height: 16rem;
+    width: 25rem;
+    margin: 3.5rem 2rem;
+    text-align:center;
+    border-radius:2rem;
+    box-shadow: .3rem .3rem 0 .1rem violet, .5rem .5rem .5rem rgba(0, 0, 0, .3);
+}
+
+
+
+.course .box-container .box h3 {
+    font-size: 2rem;
+    color: rgb(229, 0, 229);
+}
+
+.course .box-container .box p {
+    font-size: 1.5rem;
+    color: rgb(1, 0, 0);
+    padding: 1rem 0;
+}
+
+
+
+

@@ -14,6 +14,23 @@
 
     </ul>
 </div>
-<div>
-    <img id="a" [src]="elearn">
+
+<div class="container">
+    <section id="course" class="course">
+
+        <h1 class="heading">our courses</h1>
+        <h3 class="title">upgrade your skills with newest courses</h3>
+ <div *ngFor="let c of course">
+        <div class="box-container" >
+
+            <a class="box" routerLink="/InstructorDashborad/Instructor-Courses/Courses-details">
+
+                <h3>{{c.courseName}}</h3>
+                <p>{{c.description}}</p>
+                <p>{{c.year}}</p>
+            </a></div></div>
+    
+    
+
+    </section>
 </div>

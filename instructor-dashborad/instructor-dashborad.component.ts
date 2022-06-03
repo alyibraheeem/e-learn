@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { subscribeOn } from 'rxjs';
 @Component({
   selector: 'app-instructor-dashborad',
   templateUrl: './instructor-dashborad.component.html',
@@ -8,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class InstructorDashboradComponent implements OnInit {
 
 
-  constructor() { }
+  constructor( private http:HttpClient) { this.geAllCourses()}
+course:any=[];
+
+  geAllCourses(){
+return this.http.get('https://localhost:7263/api/Courses1/GetCourses')
+.subscribe((result) => {
+this.course=result;
+console.log(result);
+
+});
+  }
+
+
+
+
+
   a="./assets/dashboard.png";
   b="./assets/help-web-button.png";
   feed="./assets/feed.png";
