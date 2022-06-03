@@ -85,10 +85,11 @@ a:hover {
 /* krjgidgjdgti */
 
 .container {
-    width: 70%;
+    width: 100%;
     margin-left: 15%;
     padding: 15px;
     margin-top: 5%;
+
 }
 
 
@@ -139,115 +140,36 @@ html {
 }
 
 .course .box-container {
-    width: 85%;
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     margin: 0 auto;
     padding-top: 4rem;
     flex-wrap: wrap;
 }
 
 .course .box-container .box {
-    height: 18rem;
+    height: 16rem;
     width: 25rem;
     margin: 3.5rem 2rem;
-    text-align: center;
-    border-radius: 1rem;
+    text-align:center;
+    border-radius:2rem;
     box-shadow: .3rem .3rem 0 .1rem violet, .5rem .5rem .5rem rgba(0, 0, 0, .3);
 }
 
-.course .box-container .box i {
-    height: 10rem;
-    width: 10rem;
-    line-height: 8rem;
-    text-align: center;
-    color: #fff;
-    border-radius: 50%;
-    background: var(--pink);
-    margin-top: -4rem;
-    border: 1rem solid #fff;
-    border-left: 1rem solid pink;
-    border-right: 1rem solid pink;
-    box-shadow: 0 0 0 1rem #fff inset;
-    font-size: 3.5rem;
-}
+
 
 .course .box-container .box h3 {
     font-size: 2rem;
-    color: violet;
+    color: rgb(229, 0, 229);
 }
 
 .course .box-container .box p {
     font-size: 1.5rem;
-    color: #999;
+    color: rgb(1, 0, 0);
     padding: 1rem 0;
 }
 
 
-/* media queries  */
 
-@media (max-width:768px) {
-    html {
-        font-size: 55%;
-    }
-    header .fa-bars {
-        display: block;
-    }
-    header .navbar {
-        position: fixed;
-        top: -100rem;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-radius: 1rem;
-        opacity: 0;
-        transition: .2s linear;
-    }
-    header .navbar ul {
-        flex-flow: column;
-        padding: 2rem 0;
-    }
-    header .navbar ul li {
-        margin: 1rem 0;
-        width: 100%;
-        text-align: center;
-    }
-    header .navbar ul li a {
-        font-size: 3rem;
-        display: block;
-    }
-    header .nav-toggle {
-        top: 5.5rem;
-        opacity: 1;
-    }
-    .home .content p {
-        padding: 1.5rem 2rem;
-    }
-    .home::before {
-        display: none;
-    }
-    .about .row {
-        flex-flow: column-reverse;
-    }
-    .about .row .image img {
-        height: 60vh;
-        width: 90vw;
-    }
-    .about .row .content {
-        padding: 0 2.5rem;
-    }
-    .course .box-container {
-        width: 100%;
-    }
-    .contact .row {
-        flex-flow: column;
-    }
-    .contact .row .image img {
-        height: 50vh;
-        width: 90vw;
-    }
-    .contact .row .form-container {
-        width: 90%;
-        padding: 0;
-    }
-}
+
